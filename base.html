@@ -63,6 +63,44 @@
         {
           width: 200px;
         }
+        .imagealign {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .textalign {
+          display: flex;
+          justify-content: center;
+          align-items: left;
+          flex-direction: column;
+        }
+        .aligncarousel {
+          display: flex;
+          margin-left: 200px;
+          align-items: center;
+        }
+        .fontalign {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+        .navchange {
+          background-color: #1e212d;
+          opacity: 0.95;
+          height: 90px;
+        }
+        .logoalign {
+          margin-left : 60px;
+        }
+        .logofont {
+          font-weight: 700;
+          margin-left: 32vw;
+          font-size: 24px;
+          color: #dbe2f5e0;
+        }
+        .imagelogo {
+          margin-left: 32vw;
+        }
         /* @font-face {
   font-family: 'myFirstFont';
   src: url(Brandon Grotesque_Bold.woff);
@@ -78,14 +116,15 @@
     </style>
 
   </head>
-  <body>
+  
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">
-    <img src="logo.png" alt="Logo" style="width:100px;">
+      <nav class="navbar navbar-expand-md  fixed-top navchange">
+        <a class="navbar-brand" href="https://www.duk.ac.in">
+    <img class = "logoalign" src="logo.png" alt="Logo" style="width:100px;">
   </a>
 
-        <a class="navbar-brand " font-family:"Montserrat" href="#" > DUK Women's Cell</a>
+        <a class="navbar-brand logofont" href="#">Women's Cell</a>
+        <img class="imagelogo" width = "50px" src = "eqq.png"/>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -99,12 +138,14 @@
             </li> -->
           </ul>
         </div>
+        
       </nav>
     </header>
+  <body>
 
   <main role="main">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide carouselalign" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -112,16 +153,16 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active height">
-          <img src="collage12.jpg" height="760px" class="d-block w-100" alt="...">
+          <img src="c1.jpg" width="100vw"  class="d-block w-100" alt="...">
           <div class="container">
-            <div class="carousel-caption ">
+            <div class="carousel-caption carouseltext">
               <h1>International Women's Day - March 8, 2021</h1>
               <p>#ChooseToChallenge  #IWD2021</p>
             </div>
           </div>
         </div>
         <div class="carousel-item height">
-          <img src="collage1234.jpg" height="760px" class="d-block w-100" alt="...">
+          <img src="c2.jpg" width="100vw" class="d-block w-100" alt="...">
           <div class="container">
             <div class="carousel-caption">
               <h1>International Women's Day - March 8, 2021</h1>
@@ -130,7 +171,7 @@
           </div>
         </div>
         <div class="carousel-item height">
-          <img src="background3.jpg" height="760px" class="d-block w-100" alt="...">
+          <img src="c3.jpg" width ="100vw" class="d-block w-100" alt="...">
           <div class="container">
             <div class="carousel-caption">
               <h1>International Women's Day - March 8, 2021</h1>
@@ -156,16 +197,16 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 textalign">
           <h2 class="featurette-heading font">Objective of Women's Cell</h2>
-          <p class="lead align">Since a long back, because of the several factors including personal and social involvement, the status of women population in India has became a major concern. Based on the previous status of women safety, security and literacy in the society, the idea of 'women empowerment' came into action. It seems like our society believes in the statement that:
+          <p class="lead align textalign">Since a long back, because of the several factors including personal and social involvement, the status of women population in India has became a major concern. Based on the previous status of women safety, security and literacy in the society, the idea of 'women empowerment' came into action. It seems like our society believes in the statement that:
 "Only one - who is suppressed, who is neglected, who is ignored - needs to be empowered!"
 Unfortunately, this should not be the condition for empowerment, at all. Instead of that, the true meaning of empowerment should be - to provide an equal opportunity for personal and social exposure of every individual, irrespective to their current status in the society.
 Well, talking about the Kerala particularly, since many of the decades, it has not only maintained a good sex ratio throughout the state, but it is the most literate state of the country, as well. Although among the total working population of the country it's just 32% are women, still the second maximum number of women entrepreneurs come from Kerala only. But because the empowerment it does not mean the equality of education only, this women empowerment cell focuses on making rooms for a holistic development of women by providing them a range of opportunities for development. We aim to provide good counselling and guidance to the women of KUDSIT. Along with that we also focus on organising several events and workshops in order to increase the awareness about the women empowerment in the society. Let's extend our hands and let the women share their equal contribution in a holistic development of society, just like the men, because:
 "As individual, nothing exists!"
 - says Nagarjun</p>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 imagealign">
           <img src="womens cell.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
       </div>
       </div>
@@ -173,27 +214,27 @@ Well, talking about the Kerala particularly, since many of the decades, it has n
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2 textalign">
           <h2 class="featurette-heading font">Activities</h2>
-          <p class="lead">Description why we need Women Cell</p>
+          <p class="lead">Women's Day Celebration <br>8 March, 2021</p>
         </div>
-        <div class="col-md-5 order-md-1 corner">
-            <img src="poster.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+        <div class="col-md-5 order-md-1 corner imagealign">
+            <img src="poster_landscape.png" class="corner bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading font">Dr.Chithra S,IAS</h2>
+        <div class="col-md-7 textalign">
+          <h2 class="featurette-heading font">Dr. Chithra S, IAS</h2>
           <p class="lead align">Dr Chithra S is an IAS as well as the director of Kerala Startup Mission that is a hub of several National and international startup ecosystem. During her 3 successful years of administration at Kollam district, Chitra was designated as the Assistant Collector for one year. Later, she was promoted to the post of Sub-Collector for the following 2 years.
 Chitra also holds an MBBS degree from Institute of Medical Sciences, Kochi .
 She is a vibrant speaker and is full of motivation. She holds a calibre to tackle complex situations. Chithras great thought process enables her to take right decisions in most complex situations. Since a long back, she has always kept presenting the examples of her good decision making intellect.
 Apart from all these Chithra has also been inclined towards the fields of education art and culture, as well. Chitra is not only the inspiration of women from Kerala but also she is an idol for the whole country.
  </p>
         </div>
-        <div class="col-md-5 corner">
+        <div class="col-md-5 corner imagealign">
           <img src="Chitra.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto corner" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
         </div>
       </div>
@@ -201,11 +242,22 @@ Apart from all these Chithra has also been inclined towards the fields of educat
         <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading font">Geethu Sivakumar</h2>
-          <p class="lead">Description why we need Women Cell</p>
+        <div class="col-md-7 order-md-2 textalign">
+          <h2 class="featurette-heading font ">Geethu Sivakumar</h2>
+          <p class="lead">
+            Her entrepreneurship journey has emerged into PACE, a multinational IT consultancy 
+            serving clients worldwide, aiming to grow businesses using technology. Expanding and 
+            serving clients globally with an intelligent business model and strategic alliances. 
+            Founded PACE as a startup during her second year of college.
+<br>
+            Coder from heart, designer and hardcore technology enthusiast. Into coding and 
+            freelancing from school days. Founded a technology startup at the second year of 
+            college. Electronics and Communication Engineer from Government Engineering College, 
+            Trivandrum. Following her passion and growing her company, transforming businesses with 
+            technology. 
+          </p>
         </div>
-        <div class="col-md-5 order-md-1 corner">
+        <div class="col-md-5 order-md-1 corner imagealign">
           <img src="geethu.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto corner" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
         </div>
       </div>
@@ -214,7 +266,7 @@ Apart from all these Chithra has also been inclined towards the fields of educat
 
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-7 textalign">
           <h2 class="featurette-heading font">Sreelakshmi S S</h2>
           <p class="lead align">
             Sreelekshmi is a self-build entrepreneur from Kerala. Her go-to online 
@@ -223,13 +275,13 @@ Apart from all these Chithra has also been inclined towards the fields of educat
             and assumes the risks of a business or enterprise.” Note the common keywords business and risk. 
     </p>
         </div>
-        <div class="col-md-5 corner">
+        <div class="col-md-5 corner imagealign">
           <img src="Sreelekshmi SS.PNG" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto corner" width="400" height="400"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2 textalign">
           <h2 class="featurette-heading font">WiSE  </h2>
           <p class="lead align">Empowering women has become the key element in the development of an economy. With women moving forward, the family moves, the village moves and the nation moves. Hence, improving the status of women by way of their economic empowerment is highly called for.
 
@@ -262,12 +314,14 @@ d) Promote innovation and woman entrepreneurship by converting and translating i
 
 </p>
         </div>
-        <div class="col-md-5 order-md-1 corner">
+        <div class="col-md-5 order-md-1 corner ">
           <img src="wise.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto corner" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
         </div>
       </div>
 
       <hr class="featurette-divider">
+      <h2 class="featurette-heading fontalign">Our Members</h2>
+
       <!-- /END THE FEATURETTES -->
 
       <!-- Three columns of text below the carousel -->
@@ -276,74 +330,26 @@ d) Promote innovation and woman entrepreneurship by converting and translating i
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#mycardCarousel" style="background-color:black;" data-slide-to="0" class="active"></li>
-          <li data-target="#mycardCarousel" style="background-color:black;" data-slide-to="1"></li>
-          <li data-target="#mycardCarousel" style="background-color:black;" data-slide-to="2"></li>
-          <li data-target="#mycardCarousel" style="background-color:black;" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner aligncarousel">
           <div class="carousel-item active">
             <div class="row">
               <div class="col-lg-4">
                 <img src="sherlymiss.jpg" class="d-block w-100" alt="..." >
-                <h2 class="fontsize fontbebas">Dr.Elizabeth Sherly</h2>
-                <p>Director,KUDSIT</p>
+                <h2 class="fontsize">Dr. Elizabeth Sherly</h2>
+                <p>Director, KUDSIT</p>
               </div>
               <div class="col-lg-4 width">
                 <img src="Sinnu-Susan.jpg" class="d-block w-100" alt="...">
-                <h2 class="fontsize fontbebas">Dr.Sinnu Susan Thomas</h2>
-                <p>Asst.Professor</p>
-              </div>
-              <div class="col-lg-4">
-                <img src="background3.jpg" class="d-block w-100" alt="...">
-                <h2>Member 2</h2>
-                <p>Description of Member 2</p>
+                <h2 class="fontsize">Dr. Sinnu Susan Thomas</h2>
+                <p>Asst. Professor, KUDSIT</p>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="Sinnu-Susan.jpg" class="d-block w-100" alt="...">
-                <h2>Member 1</h2>
-                <p>Description of Member 1</p>
-              </div>
-              <div class="col-lg-4">
-                <img src="background1.jpg" class="d-block w-100" alt="...">
-                <h2>Member 2</h2>
-                <p>Description of Member 2</p>
-              </div>
-              <div class="col-lg-4">
-                <img src="background3.jpg" class="d-block w-100" alt="...">
-                <h2>Member 2</h2>
-                <p>Description of Member 2</p>
-              </div>
-            </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="background2.jpg" class="d-block w-100" alt="...">
-                <h2>Dr.Elizabeth Sherly</h2>
-                <p>Director,KUDSIT</p>
-              </div>
-              <div class="col-lg-4">
-                <img src="background3.jpg" class="d-block w-100" height='240' alt="...">
-                <h2>Dr.Sinnu Susan Thomas</h2>
-                <p>Asst.Professor</p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <img src="background1.jpg" class="d-block w-100" alt="...">
-              <h2>Member 2</h2>
-              <p>Description of Member 2</p>
-            </div>
-          </div>
-
+          
           <!-- Left and right controls -->
           <a class="carousel-control-prev" href="#mycardCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
